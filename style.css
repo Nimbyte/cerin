@@ -35,8 +35,7 @@ h4 {
 .jumbotron {
   background-color: #093;
   color: #fff;
-  margin-top: 50px;
-  padding: 50px 25px;
+  padding: 100px 25px 50px;
   font-family: Montserrat, sans-serif; }
 
 .container-fluid {
@@ -141,6 +140,10 @@ h4 {
 .navbar-default .navbar-toggle {
   border-color: transparent;
   color: #fff !important; }
+
+footer p {
+  margin-bottom: 0;
+  line-height: 40px; }
 
 footer .glyphicon {
   font-size: 20px;

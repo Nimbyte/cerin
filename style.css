@@ -189,6 +189,9 @@ footer .glyphicon {
   font-weight: bold;
   margin-bottom: 0; }
 
+.team img {
+  border: 7px solid #ddd; }
+
 ul.social-buttons {
   margin-bottom: 0; }
 

@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="css/lightbox.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -264,22 +266,20 @@
       <p><span class="glyphicon glyphicon-envelope"></span> cerinrosario@cerinrosario.com.ar</p>
     </div>
     <div class="col-sm-7 slideanim">
-      <form method="post" action="http://formspree.io/cerinrosario@cerinrosario.com.ar">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="Nombre" placeholder="Nombre" type="text" required>
-          </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="Email" placeholder="Email" type="email" required>
-          </div>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
         </div>
-        <textarea class="form-control" id="message" name="Mensaje" placeholder="Mensaje" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Enviar</button>
-          </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
-      </form>
+      </div>
+      <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -287,7 +287,7 @@
 <div id="googleMap" style="height:400px;width:100%;"></div>
 
 <!-- Add Google Maps -->
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAAR5ESy-E_NlJd6ySqxemAZH7k85WYVyY" async></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAR5ESy-E_NlJd6ySqxemAZH7k85WYVyY"></script>
 <script>
 var myCenter = new google.maps.LatLng(-32.9595265, -60.629831);
 
@@ -336,11 +336,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   </div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" async></script>
-
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" async></script>
-
-<script type="text/javascript" src="js/lightbox.min.js" async></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
 
 <script>
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {

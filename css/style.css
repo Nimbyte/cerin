@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Bauhaus";
-  src: url("bauhaus-medium-webfont.woff") format("woff"); }
 h1 {
-  font-family: "Bauhaus", sans-serif;
   font-weight: bold;
   letter-spacing: 3px; }
 
@@ -17,13 +13,6 @@ h2 {
   color: #303030;
   font-weight: 600;
   margin-bottom: 30px; }
-
-h2.subheading {
-  color: #fff;
-  font-family: 'Pacifico', cursive;
-  letter-spacing: 2px;
-  text-transform: none;
-  font-weight: normal; }
 
 h4 {
   font-size: 19px;

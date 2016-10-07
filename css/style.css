@@ -30,6 +30,8 @@ h4 {
   /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh;
   /* These two lines are counted as one :-)       */
+  height: 0px;
+  /* IE fix, without this it doesn't center content vertically */
   display: flex;
   align-items: center; }
 

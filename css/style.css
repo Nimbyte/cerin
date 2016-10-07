@@ -22,10 +22,9 @@ h4 {
   margin-bottom: 30px; }
 
 .jumbotron {
-  background-image: url("../images/cerin3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #178844;
+  background-image: url("../images/bg.jpg");
+  background-blend-mode: multiply;
   color: #fff;
   padding: 120px 25px 50px;
   font-family: Montserrat, sans-serif;

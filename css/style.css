@@ -23,9 +23,17 @@ h4 {
 
 .jumbotron {
   background-color: #178844;
+  background-image: url("../images/bg.jpg");
+  background-blend-mode: multiply;
   color: #fff;
   padding: 120px 25px 50px;
-  font-family: Montserrat, sans-serif; }
+  font-family: Montserrat, sans-serif;
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center; }
 
 .container-fluid {
   padding: 80px 50px; }

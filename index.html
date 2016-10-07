@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="css/lightbox.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -41,7 +40,10 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <img class="img-responsive center-block" src="images/logo-white.png" alt="CeRIn logo">
+  <div class="container">
+    <h1>Re-habilitar Es Futuro!</h1>
+    <p>Desde el comienzo de la vida, rehabilitar es trabajar por el futuro.</p>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -300,7 +302,7 @@ var mapProp = {
   center:myCenter,
   zoom:16,
   scrollwheel:false,
-  draggable:false,
+  draggable:true,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 

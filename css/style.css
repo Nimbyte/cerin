@@ -1,5 +1,6 @@
 h1 {
-  font-weight: bold;
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #aaa;
   letter-spacing: 3px; }
 
 body {
@@ -8,10 +9,9 @@ body {
   color: #818181; }
 
 h2 {
-  font-size: 24px;
-  text-transform: uppercase;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
   color: #303030;
-  font-weight: 600;
   margin-bottom: 30px; }
 
 h4 {

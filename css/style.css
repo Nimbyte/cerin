@@ -183,6 +183,10 @@ body {
   line-height: 1.8;
   color: #818181; }
 
+h1 {
+  text-shadow: 4px 4px 4px #aaa;
+  letter-spacing: 3px; }
+
 h2 {
   font-family: 'Tangerine', serif;
   font-size: 48px;
@@ -199,6 +203,7 @@ h4 {
 .jumbotron {
   background-image: url("../images/bg.jpg");
   background-color: #178844;
+  background-size: cover;
   color: #fff;
   padding: 120px 25px 50px;
   font-family: Montserrat, sans-serif;

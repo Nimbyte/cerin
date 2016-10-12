@@ -396,4 +396,44 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #178844; }
 
+.sprite {
+  background-image: url(../images/icons/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.sprite-abc-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -5px -5px; }
+
+.sprite-caretaker-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -111px -5px; }
+
+.sprite-doctor_male-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -5px -111px; }
+
+.sprite-handle_with_care-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -111px -111px; }
+
+.sprite-physical_therapy-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -217px -5px; }
+
+.sprite-therapy-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -217px -111px; }
+
+.sprite-voice_recognition_scan-96 {
+  width: 96px;
+  height: 96px;
+  background-position: -5px -217px; }
+
 /*# sourceMappingURL=style.css.map */

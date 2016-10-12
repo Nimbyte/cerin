@@ -5,20 +5,532 @@
   <meta charset="utf-8">
   <meta name="description" content="CeRIn cuenta con profesionales especializados en tratamientos de niños y adolescentes con alteraciones motoras, sensoriales y de la comunicación.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style type="text/css">
+    html {
+      font-family: sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    nav {
+      display: block;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    h1 {
+      margin: .67em 0;
+      font-size: 2em;
+    }
+
+    img {
+      border: 0;
+    }
+
+    button {
+      margin: 0;
+      font: inherit;
+      color: inherit;
+    }
+
+    button {
+      overflow: visible;
+    }
+
+    button {
+      text-transform: none;
+    }
+
+    button {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: #fff;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.1;
+      color: inherit;
+    }
+
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    .lead {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    @media (min-width: 768px) {
+      .lead {
+        font-size: 21px;
+      }
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+
+    .collapse {
+      display: none;
+    }
+
+    .nav {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
+    .nav > li {
+      position: relative;
+      display: block;
+    }
+
+    .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+    }
+
+    .navbar {
+      position: relative;
+      min-height: 50px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+    }
+
+    @media (min-width: 768px) {
+      .navbar {
+        border-radius: 4px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .navbar-header {
+        float: left;
+      }
+    }
+
+    .navbar-collapse {
+      padding-right: 15px;
+      padding-left: 15px;
+      overflow-x: visible;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1px solid transparent;
+      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    }
+
+    @media (min-width: 768px) {
+      .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+      }
+
+      .navbar-fixed-top .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+      max-height: 340px;
+    }
+
+    @media (max-device-width: 480px) and (orientation: landscape) {
+      .navbar-fixed-top .navbar-collapse {
+        max-height: 200px;
+      }
+    }
+
+    .container > .navbar-header,
+    .container > .navbar-collapse {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    @media (min-width: 768px) {
+      .container > .navbar-header,
+      .container > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    .navbar-fixed-top {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-fixed-top {
+        border-radius: 0;
+      }
+    }
+
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+
+    .navbar-brand {
+      float: left;
+      height: 50px;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .navbar-brand > img {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .navbar > .container .navbar-brand {
+        margin-left: -15px;
+      }
+    }
+
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      padding: 9px 10px;
+      margin-top: 8px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    .navbar-toggle .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+    }
+
+    .navbar-toggle .icon-bar + .icon-bar {
+      margin-top: 4px;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-toggle {
+        display: none;
+      }
+    }
+
+    .navbar-nav {
+      margin: 7.5px -15px;
+    }
+
+    .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: left;
+        margin: 0;
+      }
+
+      .navbar-nav > li {
+        float: left;
+      }
+
+      .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+      }
+    }
+
+    .navbar-default {
+      background-color: #f8f8f8;
+      border-color: #e7e7e7;
+    }
+
+    .navbar-default .navbar-brand {
+      color: #777;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      color: #777;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: #ddd;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #888;
+    }
+
+    .navbar-default .navbar-collapse {
+      border-color: #e7e7e7;
+    }
+
+    .jumbotron {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      color: inherit;
+      background-color: #eee;
+    }
+
+    .jumbotron h1 {
+      color: inherit;
+    }
+
+    .jumbotron p {
+      margin-bottom: 15px;
+      font-size: 21px;
+      font-weight: 200;
+    }
+
+    .jumbotron .container {
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+
+      .jumbotron h1 {
+        font-size: 63px;
+      }
+    }
+
+    .container:before,
+    .container:after,
+    .nav:before,
+    .nav:after,
+    .navbar:before,
+    .navbar:after,
+    .navbar-header:before,
+    .navbar-header:after,
+    .navbar-collapse:before,
+    .navbar-collapse:after {
+      display: table;
+      content: " ";
+    }
+
+    .container:after,
+    .nav:after,
+    .navbar:after,
+    .navbar-header:after,
+    .navbar-collapse:after {
+      clear: both;
+    }
+
+    @-ms-viewport {
+      width: device-width;
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+    }
+
+    body:after {
+      content: url(/images/close.png) url(/images/loading.gif) url(/images/prev.png) url(/images/next.png);
+      display: none;
+    }
+
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+    }
+
+    h1 {
+      text-shadow: 4px 4px 4px #aaa;
+      letter-spacing: 3px;
+    }
+
+    .jumbotron {
+      background-image: url("/images/bg.jpg");
+      background-color: #178844;
+      background-size: cover;
+      color: #fff;
+      padding: 120px 25px 50px;
+      font-family: Montserrat, sans-serif;
+      min-height: 100%;
+      /* Fallback for browsers do NOT support vh unit */
+      min-height: 100vh;
+      /* These two lines are counted as one :-)       */
+      height: 0px;
+      /* IE fix, without this it doesn't center content vertically */
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: #fff;
+      z-index: 9999;
+      border: 0;
+      font-size: 14px !important;
+      line-height: 1.42857143 !important;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      min-height: 70px;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #178844 !important;
+      line-height: 40px;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+
+  </style>
+  <link rel="preload" href="css/bootstrap.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/bootstrap.css"></noscript>
 
   <!-- FontAwesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="preload" as="style" onload="this.rel='stylesheet'" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" rel="preload">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="preload" as="style" onload="this.rel='stylesheet'" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"></noscript>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Tangerine" rel="preload" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Tangerine"></noscript>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -67,10 +579,7 @@
   <div class="container-fluid team">
     <div class="row text-center slideanim">
       <div class="col-sm-4">
-        <img
-          src="images/noemi-burgos.jpg"
-          alt="Noemí Burgos"
-          class="img-responsive img-circle center-block">
+        <img src="images/noemi-burgos.jpg" alt="Noemí Burgos" class="img-responsive img-circle center-block">
         <h4>Dra. Noemí Burgos</h4>
         <p class="text-muted">Directora</p>
         <ul class="list-inline social-buttons">
@@ -80,10 +589,7 @@
         </ul>
       </div>
       <div class="col-sm-4">
-        <img
-          src="images/silvina-maiorano.jpg"
-          alt="Silvina Maiorano"
-          class="img-responsive img-circle center-block">
+        <img src="images/silvina-maiorano.jpg" alt="Silvina Maiorano" class="img-responsive img-circle center-block">
         <h4>Lic. Silvina Maiorano</h4>
         <p>Coord. Dpto. de Fonoaudiología</p>
         <ul class="list-inline social-buttons">
@@ -93,10 +599,7 @@
         </ul>
       </div>
       <div class="col-sm-4">
-        <img
-          src="images/carolina-rovere.jpg"
-          alt="Carolina Rovere"
-          class="img-responsive img-circle center-block">
+        <img src="images/carolina-rovere.jpg" alt="Carolina Rovere" class="img-responsive img-circle center-block">
         <h4>Ps. Carolina Rovere</h4>
         <p>Coord. Dpto. de Psicología</p>
         <ul class="list-inline social-buttons">
@@ -116,7 +619,7 @@
   <br>
   <div class="row slideanim">
     <div class="col-sm-4 col-sm-offset-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Users/doctor_male-96.png" alt="" width="96">
+      <img src="images/icons/doctor_male-96.png" alt="" width="96">
       <h4>Médicos Fisiatras</h4>
       <p>Especialistas en Rehabilitación Infantil, capacitados para la detección, diagnóstico, pronóstico, equipamiento e indicación terapéutica y coordinación del equipo interdisciplinario.</p>
     </div>
@@ -124,17 +627,17 @@
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Healthcare/physical_therapy-96.png" alt="" width="96">
+      <img src="images/icons/physical_therapy-96.png" alt="" width="96">
       <h4>Kinesiólogos</h4>
       <p>Equipo de terapeutas especializados en rehabilitación de niños con alteraciones neuromotoras, aplicando conceptos de Bobath, Castillo Morales, Taping, entre otros.</p>
     </div>
     <div class="col-sm-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Security/voice_recognition_scan-96.png" alt="" width="96">
+      <img src="images/icons/voice_recognition_scan-96.png" alt="" width="96">
       <h4>Fonoaudiólogos</h4>
       <p>Profesionales especializados en las habilidades de la comunicación humana y la alimentación. Se ocupa de diagnosticar y brindar herramientas para optimizar la función en estas áreas. Se utilizan técnicas manuales y posturales, Prompt, Taping, Sistemas aumentativos de comunicación de baja y media tecnología.</p>
     </div>
     <div class="col-sm-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Healthcare/therapy-96.png" alt="" width="96">
+      <img src="images/icons/therapy-96.png" alt="" width="96">
       <h4>Psicólogos</h4>
       <p>Profesionales que orientan a re-habilitar al sujeto para favorecer el proceso de subjetivación de sus límites. Brindando también un espacio de contención al grupo familiar.</p>
     </div>
@@ -142,17 +645,17 @@
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Ecommerce/handle_with_care-96.png" alt="" width="96">
+      <img src="images/icons/handle_with_care-96.png" alt="" width="96">
       <h4>Terapistas Ocupacionales</h4>
       <p>Profesionales preparados para favorecer la independencia del paciente en las diferentes áreas de desempeño funcional, mediante actividades seleccionadas, confección de férulas, adaptaciones y la intervención en el hogar. Se realizan abordajes desde la integración sensorial.</p>
     </div>
     <div class="col-sm-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Baby/abc-96.png" alt="" width="96">
+      <img src="images/icons/abc-96.png" alt="" width="96">
       <h4>Psicopedagogos</h4>
       <p>Profesionales especializados en el abordaje de las problemáticas del aprendizaje que, mediante la evaluación y detección de las dificultades y fortalezas, brindan tratamiento y asesoramiento relacionados con la Integración Escolar.</p>
     </div>
     <div class="col-sm-4">
-      <img src="https://maxcdn.icons8.com/Color/PNG/96/Science/caretaker-96.png" alt="" width="96">
+      <img src="images/icons/caretaker-96.png" alt="" width="96">
       <h4>Trabajadores Sociales</h4>
       <p>Asesoramiento permanente a los familiares sobre leyes de discapacidad y cobertura de obras sociales, así como también se realizan gestiones correspondientes en el caso que se requiera.</p>
     </div>
@@ -177,10 +680,7 @@
   <div class="container-fluid team">
     <div class="row text-center slideanim">
       <div class="col-sm-4 col-sm-offset-4">
-        <img
-          src="images/silvina-maiorano.jpg"
-          alt="Silvina Maiorano"
-          class="img-responsive img-circle center-block">
+        <img src="images/silvina-maiorano.jpg" alt="Silvina Maiorano" class="img-responsive img-circle center-block">
         <h4>Lic. Silvina Maiorano</h4>
         <p>Directora</p>
         <ul class="list-inline social-buttons">
@@ -337,14 +837,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div class="col-md-4 text-center">
       <ul class="list-inline social-buttons">
         <li>
-          <a href="https://www.facebook.com/CerinRosario"
-          target="_blank">
+          <a href="https://www.facebook.com/CerinRosario" target="_blank">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/CeRInRosario/"
-          target="_blank">
+          <a href="https://www.instagram.com/CeRInRosario/" target="_blank">
             <i class="fa fa-instagram"></i>
           </a>
         </li>
